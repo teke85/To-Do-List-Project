@@ -16,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #041444;
+  color: #414348;
 }
 
 main {
@@ -41,7 +41,7 @@ h1 {
   color: #041444;
 }
 
-#list-title {
+#title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,7 +89,7 @@ input {
   width: 90%;
 }
 
-.task-item {
+.list-task-item {
   color: #041444;
   font-weight: 500;
 }
@@ -103,7 +103,7 @@ input:checked + .task-item {
   text-decoration: line-through;
 }
 
-.todo_list_div {
+.list_div {
   display: flex;
   flex-direction: column;
   width: auto;
@@ -130,13 +130,13 @@ li {
   border-bottom: 2px solid #041444;
 }
 
-.item-info {
+.list-item-info {
   display: flex;
   align-items: center;
   width: 95%;
 }
 
-.bottom {
+.bottom-sec {
   display: flex;
   height: 50px;
   align-items: center;

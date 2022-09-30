@@ -1,4 +1,4 @@
-import removeIcon from '../icons/remove.png'
+import removeIcon from '../icons/delete.png'
 
 const icon3 = new Image()
 icon3.src = removeIcon
@@ -37,7 +37,7 @@ export default class ToDo {
   }
 
   static show() {
-    const todoList = document.getElementById('do-list')
+    const todoList = document.getElementById('item-do-list')
     const toDos = JSON.parse(localStorage.getItem('toDos') || '[]')
     let inputCheck = ''
     todoList.innerHTML = ''
@@ -50,9 +50,9 @@ export default class ToDo {
       todoList.innerHTML += `
   
       <li>
-        <div class="item-info">
+        <div class="list-item-info">
           <input ${inputCheck} type="checkbox" class="check" id="input${task.index}">
-          <input id="${task.index}" class="task-item" value="${task.description}">
+          <input id="${task.index}" class="list-task-item" value="${task.description}">
         </div>
         <span id="item-icon">
           <img src="${icon3.src}" class="remove" id="${task.id}" alt="Remove Task" title="Remove Task">
