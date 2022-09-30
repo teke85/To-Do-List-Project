@@ -1,19 +1,15 @@
-import _ from 'lodash'
-import printMe from './print.js'
-import './index.css'
+import './style.css';
+import titleIcon from './icons/refresh.png';
+import addIcon from './icons/add.png';
+import showList from './modules/showListItems.js';
 
-function component() {
-  const element = document.createElement('div')
-  const btn = document.createElement('button')
+showList();
 
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ')
-
-  btn.innerHTML = 'Click me and check the console!'
-  btn.onclick = printMe
-
-  element.appendChild(btn)
-
-  return element
-}
-
-document.body.appendChild(component())
+const titleSpan = document.getElementById('t-icon');
+const addSpan = document.getElementById('add-icon');
+const icon1 = new Image();
+icon1.src = titleIcon;
+const icon2 = new Image();
+icon2.src = addIcon;
+titleSpan.appendChild(icon1);
+addSpan.appendChild(icon2);
