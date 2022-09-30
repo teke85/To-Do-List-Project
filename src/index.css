@@ -1,0 +1,10 @@
+body {
+    background-color: bisque;
+}
+
+.hello {
+  color: red;
+  /* background: url('./image.jpg'); */
+  height: 100vh;
+  background-repeat: no-repeat;
+}
