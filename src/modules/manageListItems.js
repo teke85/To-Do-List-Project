@@ -48,7 +48,6 @@ export default class ToDo {
         inputCheck = 'checked';
       }
       todoList.innerHTML += `
-  
       <li>
         <div class="list-item-info">
           <input ${inputCheck} type="checkbox" class="check" id="input${task.index}">
@@ -58,7 +57,6 @@ export default class ToDo {
           <img src="${icon3.src}" class="remove" id="${task.id}" alt="Remove Task" title="Remove Task">
         </span>
       </li>
-    
       `;
     });
   }
