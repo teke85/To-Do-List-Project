@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-N/A
+View Project Demo [Here](https://teke85.github.io/To-Do-List-Project/)
 
 ## Get Started
 
